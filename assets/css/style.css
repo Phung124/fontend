@@ -1,0 +1,315 @@
+/* từ tổng quan đến chi tiết 
+từ ngoài vào trong 
+từ sau ra trước
+từ trên xuống dưới 
+từ trái qua phải */
+body{
+    font-family:  "Open Sans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.container{
+width: 1170px;
+margin: 0px auto;
+padding-left: 15px;
+padding-right: 15px;
+display: flex;
+
+}
+/* ===================================================HEADER====================================================================== */
+ul{
+    list-style: none;
+    padding: 0px;
+}
+#header{
+    background: #23282d;
+    padding-top: 28px;
+    padding-right: 8px;
+    margin-bottom: 34px;
+}
+form#search{
+    position: relative;
+}
+form#search input{
+    background: #131619;
+    width: 247px;
+    padding: 10px 42px 10px 15px;
+    border: none;
+    outline: none;
+    color: #909090;
+    
+}
+
+form#search button{
+position: absolute;
+top:0px;
+right: 0px;
+background: none;
+border: none;
+color: #a2a1a1;
+padding: 9px 12px;
+}
+ul#main-menu{
+    margin-bottom: 0px;
+}
+nav{
+    margin-top: 7px;
+    margin-bottom:6px; 
+    flex-basis: 100%;
+     border-right: 10px solid #ff2d2d;
+}
+ul#main-menu li a {
+    padding:6px 20px ;
+    display: block;
+    color: #eeeeee;
+}
+
+ul#main-menu li:first-child a{
+    padding-left: 0px;
+}
+
+ul#main-menu li:hover a,
+ul#main-menu li.active a{
+    color: #4db2ec;
+    text-decoration: none;
+}
+/* ================================================================featured-post========================================================= */
+#wp-featured-post{
+    margin-bottom: 20px;
+}
+.box .box-head h3{
+    display: inline-block;
+    background: #23282d;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #eeeeee;
+    padding:1px 15px;
+    margin: 0px;
+    font-size: 16px;
+}
+.box .box-body{
+    padding-top: 20px;
+}
+.box.featured-post .box-body{
+     padding-bottom: 30px; 
+    border-bottom:  1px solid #dadada;
+}
+
+ul.list-featured-box li{
+    flex: 360px 0 1;
+}
+ul.list-featured-box li a.post-thumb{
+    display: block;
+    overflow: hidden;
+}
+ul.list-featured-box li a.post-thumb:hover img{
+    transform: scale(1.05);
+    transition: all 0.25s;
+    }
+    
+ul.list-featured-box li a.post-title{
+    color: #5f5f5f;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    /* mặc định là display inline */
+    display: block;
+}
+/* ===========================================================wp-content================================================================== */
+#content{
+    flex:765px;
+    padding-right:15px ;
+}
+#sidebar{
+    flex: 375px;
+    padding-left: 15px;
+}
+.box.new-post .box-head{
+    border-bottom: 2px solid #4db2ec;
+}
+.box.new-post .box-head h3{
+    background: #4db2ec;
+
+}
+ul.post-list li{
+display: flex;
+margin-bottom: 40px;
+}
+ul.post-list li a.post-thumb{
+    display: block;
+    padding-right: 15px;
+    flex:280px;
+}
+ul.post-list li .more-info{
+    padding-left: 15px;
+}
+ul.post-list li .more-info a.post-title{
+    color: #111111;
+    display: block;
+    font-size: 21px;
+    font-weight: 600;
+}
+ul.post-list li:hover .more-info a.post-title{
+    color: #4db2ec;
+    text-decoration: none;
+}
+ul.post-list li .more-info .post-published{
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 0px;
+}
+ul.post-list li .more-info .post-author{
+    color: #111111;
+}
+ul.post-list li .more-info .post-date{
+    color: #aaaaaa;
+}
+ul.post-list li .more-info .post-excerpts{
+    font-size: 13px;
+    color: #777777;
+    margin-bottom: 0px;
+}
+.abs{
+    position: relative;
+    display: block;
+    margin-bottom:40px ;
+}
+.titlebanner{
+    position: absolute;
+    top:42px;
+    text-align: center;
+}
+.titlebanner h2{
+color: #f05510;
+text-transform: uppercase;
+font-size: 28px;
+font-weight: bold;
+margin: 0px;
+}
+.titlebanner p{
+    color: #f0f0f0;
+    padding-left: 44px;
+    padding-right: 44px;
+    font-size: 13px;
+    margin: 0px;
+}
+.box-see{
+    position: absolute;
+    bottom: 18px;
+    left: 123px;
+    background: #0073aa;
+    color: #f0f0f0;
+    padding: 5px 25px 5px 25px;
+    text-transform: uppercase;
+}
+.box-see h3{
+    margin: 0px;
+    font-weight: 400;
+    font-size: 13px;
+}
+.box.top-topic .box-head {
+    border-bottom: 1px solid #ff2d2d;
+}
+.box.top-topic .box-head h3 {
+    background: #ff2d2d;
+}
+
+ul.list-topic li a{
+    color: #212121;
+    position: relative;
+    display: block;
+    font-size: 16px;
+    padding: 5px 0px;
+}
+ul.list-topic li a span.num-post{
+position: absolute;
+top:5px;
+right: 20px;
+}
+ul.list-topic li:hover a{
+    color: #ff2d2d;
+    text-decoration: none;
+}
+/* ===========================================================FOOTER========================================================== */
+#footer{
+    background: #2e2f30;
+    color: #f6f6f6;
+    padding-top: 52px;
+    padding-bottom: 75px;
+
+}
+#footer .box .box-head h3{
+    background: none;
+    padding: 0px;
+    font-size: 18px;
+}
+#footer .box.logo-footer{
+    flex:280px;
+    padding-right: 15px;
+}
+ #footer .box.about-us{
+    flex:680px;
+    padding-left: 15px;
+    padding-right: 180px;
+}
+#footer .box.follow-us{
+    flex:180px;
+    padding-left: 15px;
+} 
+#footer .box.about-us a{
+    color: #4db2ec;
+    font-size: 14px;
+}
+#footer .box.logo-footer .box-head{
+    visibility: hidden;
+}
+#footer .box .box-body{
+    padding-top:40px ;
+}
+#footer .box.about-us .box-body p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.list-socical li{
+    margin-left: 10px;
+}
+.list-socical li:first-child{
+    margin-left: 0px;
+}
+.list-socical li a{
+    background: #434648;
+    padding: 5px 9px;
+    color: #eee;
+    display: block;
+}
+.list-socical li:hover a{
+    color: #4db2ec;
+}
+/* ================================================================================COPY-RIGHT================================================== */
+#wp-copyright{
+    background: #222527;
+    color: #ffffff;
+    padding-top: 11px; 
+    padding-bottom: 11px;
+}
+#wp-copyright p.copyright {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+ul#footer-menu{
+    margin-bottom: 0;
+}
+ul#footer-menu li a{
+    color: #f3f3f3;
+    font-size: 14px;
+    display: block;
+    padding: 0px 13px;
+}
+ul#footer-menu li:hover a{
+    color: #4db2ec;
+    text-decoration: none;
+}
+ul#footer-menu li a:last-child{
+    padding-right:0px ;
+}
